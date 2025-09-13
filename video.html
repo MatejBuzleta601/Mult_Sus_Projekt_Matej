@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video - Matej8251</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="site-title">Matej8251</h1>
+        <p class="site-subtitle">Moj osobni YouTube kanal</p>
+      </div>
+
+      <nav class="site-nav" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projekt.html">O projektu</a></li>
+          <li><a href="tekst.html">Tekst</a></li>
+          <li><a href="slika.html">Slika</a></li>
+          <li><a href="grafika.html">Grafika</a></li>
+          <li><a href="zvuk.html">Zvuk</a></li>
+          <li><a href="video.html" class="active">Video</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="content">
+      <h1>Video</h1>
+      <p>
+        Ovdje sam stavio primjer jednog videa koji sam snimio sa programom Bandicam Screen Recorder i uredio ga sa programom Animotica.
+		Iako ovaj video nije na mom Youtube kanalu, na isti način snimam ostale videe samo bez glasa, ovo je samo test webcama koji Bandicam može prepoznati kao sekundarni izvor za snimku mog lica i zvuk glasa.
+      </p>
+      <div class="overview">
+        <!-- Logo alata za snimanje -->
+        <figure class="card">
+          <img src="images/bandicam_logo.png" alt="Bandicam Logo" style="max-width:100%; height:auto;" />
+          <figcaption>Bandicam Screen Recorder – ovo je alat koji već dugi niz godina koristim za snimanje svojih Youtube videa iz razloga što je vrlo jednostavan i pruža mi sve što tražim da moji videi imaju, a to je snimanje mog screena kako igram. Besplatna verzija oma watermark i omogućava samo 10 minuta snimanja ali može se nadograditi kao one time purchase za uklonjenje ograničenja i bolje kvalitete videa.</figcaption>
+        </figure>
+
+        <!-- Logo alata za uređivanje -->
+        <figure class="card">
+          <img src="images/animotica_logo.png" alt="Animotica Logo" style="max-width:100%; height:auto;" />
+          <figcaption>Animotica – Ovo je alat koji nije baš jako popularan, ali mi dobro služi za uređivanje mojih videa, npr ako dodajem tekst unutar videa kao overlay ili kombiniram druge videe i izrezujem klipove. Može ga se instalirati na Microsoft Storeu i kao Bandicam, ima besplatnu verziju ali i one time purchase upgrade.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Primjer video -->
+      <figure class="card">
+        <video controls style="max-width:100%; height:auto;">
+          <source src="video/videoprimjer.mp4" type="video/mp4">
+          Vaš preglednik ne podržava HTML5 video.
+        </video>
+        <figcaption>Ovo je jedan glupi kratki video koji sam snimio za šalu, koristio sam Bandicam za snimanje igre i svog glasa putem webcama, a video sam uredio u Animotici tako da smanjim kvalitetu bez vizualnog gubitka.</figcaption>
+      </figure>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Matej8251 — prezentacija projekta</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

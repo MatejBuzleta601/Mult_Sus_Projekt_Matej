@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tekst - Matej8251</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="site-title">Matej8251</h1>
+        <p class="site-subtitle">Moj osobni YouTube kanal</p>
+      </div>
+
+      <nav class="site-nav" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projekt.html">O projektu</a></li>
+          <li><a href="tekst.html" class="active">Tekst</a></li>
+          <li><a href="slika.html">Slika</a></li>
+          <li><a href="grafika.html">Grafika</a></li>
+          <li><a href="zvuk.html">Zvuk</a></li>
+          <li><a href="video.html">Video</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="content">
+      <div class="hero-box">
+        <h1>Tekst</h1>
+        <p>
+          Na mom kanalu ima jako puno teksta, pogotovo zato jer ne snimam svoj glas nego kroz tekst objašnjavam o čemu su videi, također u mnogim videima ubacujem tekst dok video traje. Ovdje ispod je primjer nekih tekstova sa kanala.
+        </p>
+
+        <div class="images-row">
+			<div class="image-box">
+				<img src="images/postprimjer.png" alt="Post na YouTube" class="side-image left-image">
+				<p class="image-caption">Link na post: <a href="https://www.youtube.com/@Matej8251/posts" target="_blank">ovdje</a></p>
+			</div>
+			<div class="image-box">
+				<img src="images/primjerteksta.png" alt="Tekst unutar videa" class="side-image">
+				<p class="image-caption">Link za video iz kojeg je tekst: <a href="https://youtu.be/LqFBdASrZnw?si=RFgPWXKUaAdWf9cC" target="_blank">ovdje</a></p>
+			</div>
+		</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Matej8251 — prezentacija projekta</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

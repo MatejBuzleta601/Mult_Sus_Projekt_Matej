@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slika - Matej8251</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="site-title">Matej8251</h1>
+        <p class="site-subtitle">Moj osobni YouTube kanal</p>
+      </div>
+
+      <nav class="site-nav" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projekt.html">O projektu</a></li>
+          <li><a href="tekst.html">Tekst</a></li>
+          <li><a href="slika.html" class="active">Slika</a></li>
+          <li><a href="grafika.html">Grafika</a></li>
+          <li><a href="zvuk.html">Zvuk</a></li>
+          <li><a href="video.html">Video</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main>
+  <section class="content">
+    <h1>Slika</h1>
+    <p>
+      Ovdje opisujem kako i s čim radim slike za svoje YouTube thumbnaile.  
+      Neke screenshotam i izrežem u Paintu, a neke dodatno uređujem, bojim ili dodajem tekst u Bojanje 3D kako bi thumbnail izgledao privlačno.
+    </p>
+
+    <div class="images-row">
+      <figure class="image-box">
+        <img src="images/Dubory.png" alt="Thumbnail u Paintu" class="side-image left-image">
+        <figcaption>Ovaj thumbnail sam napravio tako što sam napravio screenshot unutar videa koji sam snimio i onda izrezao samo potreban dio unutar Painta.</figcaption>
+      </figure>
+
+      <figure class="image-box">
+        <img src="images/languageth.jpg" alt="Thumbnail u Bojanje 3D" class="side-image">
+        <figcaption>Za ovaj sam koristio Bojanje 3D, također sam napravio screenshot za pozadinu, onda sam to otvorio u Bojanju 3D i tamo sam dodao tekst i naljepnice koje su bile png slike ovih likova na slici.</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Matej8251 — prezentacija projekta</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

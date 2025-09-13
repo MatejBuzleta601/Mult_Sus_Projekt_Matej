@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grafika - Matej8251</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="site-title">Matej8251</h1>
+        <p class="site-subtitle">Moj osobni YouTube kanal</p>
+      </div>
+      <nav class="site-nav" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projekt.html">O projektu</a></li>
+          <li><a href="tekst.html">Tekst</a></li>
+          <li><a href="slika.html">Slika</a></li>
+          <li><a href="grafika.html" class="active">Grafika</a></li>
+          <li><a href="zvuk.html">Zvuk</a></li>
+          <li><a href="video.html">Video</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="content">
+      <h1>Grafika</h1>
+      <p>
+        Ovdje su četiri primjera mog youtube introa koje sam sam animirao pomoću SFM-a.  
+        SFM koristi mnoge alate za izradu animacija, sličan je kao Blender ali je pristupačniji za početnike, mogu se koristiti gotovi modeli iz steam workshopa ili sami izraditi modele u Blenderu pa ih importati u SFM.
+		U ovim primjerima sam koristio modele slova i unutar graph editora sam radio pomake pomoću move i rotate alata i zatim dodavanje keyframova.  
+        U novijim introima sam dodavao i druge modele i animirao ih kako trči i rade druge stvari.
+      </p>
+
+      <div class="video-row">
+        <figure class="video-box">
+          <video src="video/firstintro.mp4" controls class="side-video"></video>
+          <figcaption>Intro 1: Ovo je bio moj prvi intro koji sam koristio u svojim videima kao jingle koji se pojavi prije samog videa, vrlo jednostavan ali prepoznatljiv.</figcaption>
+        </figure>
+
+        <figure class="video-box">
+          <video src="video/secondintro.mp4" controls class="side-video"></video>
+          <figcaption>Intro 2: Ovdje sam intro poboljšao tako što sam napravio da slova padaju kao vodopad i onda sam kameru izzumirao da se vidi cijeli tekst i kao bonus sam dodao brze glitcheve što su zapravo samo različiti uglovi kamera.</figcaption>
+        </figure>
+
+        <figure class="video-box">
+          <video src="video/thirdintro.mp4" controls class="side-video"></video>
+          <figcaption>Intro 3: Ovaj nažalost nisam nikad koristio u videima, ali ga imam na kanalu, plan je bio da mi ovaj intro bude za sve SFM videe, dodao sam likove iz igara kako protrče kraj slova i sruše ih.</figcaption>
+        </figure>
+
+        <figure class="video-box">
+          <video src="video/fourthintro.mp4" controls class="side-video"></video>
+          <figcaption>Intro 4: Ovo je trenutni intro koji koristim i ovdje sam napravio slične stvari kao i u prošlim primjerima, samo sam dodao crveno osvjetljenje i camera shake koji je zapravo samo rotate keyframe unutar graph editora.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Matej8251 — prezentacija projekta</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

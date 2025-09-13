@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zvuk - Matej8251</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="site-title">Matej8251</h1>
+        <p class="site-subtitle">Moj osobni YouTube kanal</p>
+      </div>
+      <nav class="site-nav" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projekt.html">O projektu</a></li>
+          <li><a href="tekst.html">Tekst</a></li>
+          <li><a href="slika.html">Slika</a></li>
+          <li><a href="grafika.html">Grafika</a></li>
+          <li><a href="zvuk.html" class="active">Zvuk</a></li>
+          <li><a href="video.html">Video</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="content">
+      <h1>Zvuk</h1>
+      <p>
+        Za ove zvukove sam koristio Audacity da dobim glas lika iz videoigre AEWVS.
+		Prvo sam glas stvorio na stranici FreeTextToSpeech koje više nema, onda sam u Audacityu otvorio klip, klonirao ga dva puta tako da ih je tri, i na prvi i drugi sam promijenio pitch.
+        Zatim sam dodao reverb za zvuči kao da je u većoj prostoriji.  
+        Ispod su primjeri zvukova koje sam koristio u jednom od videa.
+      </p>
+
+      <div class="audio-row">
+        <figure class="audio-box">
+          <audio controls src="audio/zvuk1.mp3"></audio>
+          <figcaption>Glas 1 - Prva stvar koju kaže u videu</figcaption>
+        </figure>
+
+        <figure class="audio-box">
+          <audio controls src="audio/zvuk2.mp3"></audio>
+          <figcaption>Glas 2 — Druga</figcaption>
+        </figure>
+
+        <figure class="audio-box">
+          <audio controls src="audio/zvuk3.mp3"></audio>
+          <figcaption>Glas 3 — Treća</figcaption>
+        </figure>
+
+        <figure class="audio-box">
+          <audio controls src="audio/zvuk4.mp3"></audio>
+          <figcaption>Glas 4 — Četvrta</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        Video u kojem sam koristio ove zvukove možete pogledati ovdje:  
+        <a href="https://youtu.be/HZzvJbUzUK4?si=OqOMtY5YdFhHTokS" target="_blank">Link na video</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Matej8251 — prezentacija projekta</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

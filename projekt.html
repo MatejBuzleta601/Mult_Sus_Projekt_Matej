@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O projektu - Matej8251</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="site-title">Matej8251</h1>
+        <p class="site-subtitle">Moj osobni YouTube kanal</p>
+      </div>
+
+      <nav class="site-nav" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projekt.html" class="active">O projektu</a></li>
+          <li><a href="tekst.html">Tekst</a></li>
+          <li><a href="slika.html">Slika</a></li>
+          <li><a href="grafika.html">Grafika</a></li>
+          <li><a href="zvuk.html">Zvuk</a></li>
+          <li><a href="video.html">Video</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="content">
+      <h1>O projektu</h1>
+      <p>
+        Cilj ovog projekta je da pokažem moje znanje o multimedijskim objektima i kako ih koristim za izradu videa i svoj youtube kanal općenito. 
+      </p>
+      <p>
+        Kanal imam već 6 godina i započeo sam sa normalnim gameplay videima koje sam snimao sa programom Bandicam Screen recorder. 
+      </p>
+	  <p>
+        U međuvremenu sam napravio svoj vlastiti intro jingle u programu Source FilmMaker ili SFM, koji je namijenjen za izradu 3d animacija sa 3d modelima. 
+      </p>
+	  <div class="project-image">
+      <img src="images/poster.jpeg" alt="Primjer projekta">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Matej8251 — prezentacija projekta</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
